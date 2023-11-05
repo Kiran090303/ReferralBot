@@ -1,0 +1,87 @@
+'use strict';
+
+// Close dialog with the customer, reporting fulfillmentState of Failed or Fulfilled
+function close(sessionAttributes, fulfillmentState, message) {
+    return {
+        sessionAttributes,
+        dialogAction: {
+            type: 'Close',
+            fulfillmentState,
+            message,
+        },
+    };
+}
+
+// --------------- Events -----------------------
+
+function dispatch(intentRequest, callback) {
+    console.log(`request received for userId=${intentRequest.userId}, intentName=${intentRequest.currentIntent.name}`);
+    const sessionAttributes = intentRequest.sessionAttributes;
+    const slots = intentRequest.currentIntent.slots;
+    const Referrer = slots.Referrer;
+    const Student = slots.Student;
+    const Degree = slots.Degree;
+    const Branch = slots.Branch;
+    const College = slots.College;
+    const JobPosition = slots.JobPosition;
+    const Company = slots.Company;
+    const WorkExperience = slots.WorkExperience;
+    const JobID = slots.JobID;
+    const StudentName = slots.StudentName;
+
+    if (Student === "yes" && WorkExperience === "yes") {
+        callback(close(sessionAttributes, 'Fulfilled', {
+            'contentType': 'PlainText',
+            'content': `Hello ${Referrer}, Hope you are doing well.
+            I am a ${Branch} student pursuing ${Degree} in ${College}.
+            I wish to propose my candidacy for ${JobPosition} at ${Company}.
+            I love improving systems and want to apply my learnings into real world applications 
+            respectively. If you find me a deserving candidate, I would be glad to be referred for ${JobID} 
+            at ${Company} and implement the proposed improvements.
+            Hoping to hear from you soon.
+            Warm Regards
+            ${StudentName}`
+        }));
+    } else if (Student === "yes" && WorkExperience === "no") {
+        callback(close(sessionAttributes, 'Fulfilled', {
+            'contentType': 'PlainText',
+            'content': `Hello ${Referrer}, Hope you are doing well.
+            I am a ${Branch} student pursuing ${Degree} in ${College}.
+            I wish to propose my candidacy for ${JobPosition} at ${Company}.
+            I love improving systems and want to apply my learnings into real world applications 
+            respectively. If you find me a deserving candidate, I would be glad to be referred for ${JobID} 
+            at ${Company} and implement the proposed improvements.
+            Hoping to hear from you soon.
+            Warm Regards
+            ${StudentName}`
+        }));
+    } else if (Student === "no") {
+        callback(close(sessionAttributes, 'Fulfilled', {
+            'contentType': 'PlainText',
+            'content': `Hello ${Referrer}, Hope you are doing well.
+            I am a ${Branch} student pursuing ${Degree} in ${College}.
+            I wish to propose my candidacy for ${JobPosition} at ${Company}.
+            I love improving systems and want to apply my learnings into real world applications 
+            respectively. If you find me a deserving candidate, I would be glad to be referred for ${JobID} 
+            at ${Company} and implement the proposed improvements.
+            Hoping to hear from you soon.
+            Warm Regards
+            ${StudentName}`
+        }));
+    }
+}
+
+// --------------- Main handler -----------------------
+
+// Route the incoming request based on intent.
+// The JSON body of the request is provided in the event slot.
+exports.handler = (event, context, callback) => {
+    try {
+        dispatch(event,
+            (response) => {
+                callback(null, response);
+            });
+    } catch (err) {
+        callback(err);
+    }
+};

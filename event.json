@@ -1,0 +1,28 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "FulfillmentCodeHook",
+  "userId": "user-1",
+  "sessionAttributes": {},
+  "bot": {
+    "name": "Referral",
+    "alias": "$LATEST",
+    "version": "$LATEST"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "Referral",
+    "slots": {
+      "Referrer": "NAME OF PERSON WHO IS GONNA REFER YOU",
+      "Student": "Yes",
+      "Degree": "DEGREE",
+      "Branch": "COURSE",
+      "College": "COLLEGE",
+      "JobPosition": "SEEKING ROLE",
+      "Company": "COMPANY NAME",
+      "WorkExperience": "yes",
+      "JobID": "JOB ID",
+      "StudentName": "NAME"
+    },
+    "confirmationStatus": "None"
+  }
+}
