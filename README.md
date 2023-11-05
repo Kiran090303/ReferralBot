@@ -28,7 +28,9 @@ Goals to achieve the necessary Output:
 - For the Role, choose Create new role from templates.
 - Enter a new role name EventRole.
 - Choose Create function.
-- In the Function code section write the required code.
+  
+<img width="956" alt="22" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/cdd6831f-e97b-44b5-9693-c9ba72ae2d22">
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - Test the Lambda Function Using Sample Event Data.
 - On the function page, in the list of test events, choose Configure test events.
@@ -36,11 +38,16 @@ Goals to achieve the necessary Output:
 - Choose to Create.
 - Choose Test and Lambda runs your Lambda function.
 
+![24](https://github.com/Kiran090303/ReferralBot/assets/98480971/fc104d0e-49c6-41da-a8dc-8d720a50c4e7)
+
 **Step 2— Create a bot**
 
 - Go to services console, type lex and select Amazon Lex.
 - Select Get Started and then select Create.
 - On the Create your Lex bot page, choose Custom bot.
+
+<img width="935" alt="21" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/9b505c08-75d0-4f8e-baa3-063b2fd3f3ac">
+
 - App name: ReferralBot
 - Output voice: Salli
 - Text Only
@@ -94,3 +101,6 @@ Click on continue.
 - Click on activate, you will get a endpoint URL. Paste that in Twilio sandbox.
 - Paste that in this field: When a message comes in, and click on save.
 - Now go to whatsapp and start your conversation with Bot!!
+
+  ![13](https://github.com/Kiran090303/ReferralBot/assets/98480971/2fd7cf50-7de0-410f-ba0c-d3374504b273)
+
