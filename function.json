@@ -15,21 +15,28 @@ function close(sessionAttributes, fulfillmentState, message) {
 // --------------- Events -----------------------
 
 function dispatch(intentRequest, callback) {
-    console.log(`request received for userId=${intentRequest.userId}, intentName=${intentRequest.currentIntent.name}`);
+   // console.log(`request received for userId=${intentRequest.userId}, intentName=${intentRequest.currentIntent.name}`);
     const sessionAttributes = intentRequest.sessionAttributes;
+  //  console.log(`sessionAttributes = ${sessionAttributes}`);
     const slots = intentRequest.currentIntent.slots;
+      //  console.log(`slots = ${slots}`);
     const Referrer = slots.Referrer;
+     // console.log(`Referrer = ${Referrer}`);
     const Student = slots.Student;
+  //  console.log(`Student = ${Student}`);
     const Degree = slots.Degree;
     const Branch = slots.Branch;
     const College = slots.College;
     const JobPosition = slots.JobPosition;
     const Company = slots.Company;
     const WorkExperience = slots.WorkExperience;
+   // console.log(`WorkExperience = ${WorkExperience}`)
     const JobID = slots.JobID;
     const StudentName = slots.StudentName;
+   // console.log(`Student Name = ${StudentName}`)
 
-    if (Student === "yes" && WorkExperience === "yes") {
+    if (Student === "Yes" && WorkExperience === "Yes") {
+        console.log('Condition 1');
         callback(close(sessionAttributes, 'Fulfilled', {
             'contentType': 'PlainText',
             'content': `Hello ${Referrer}, Hope you are doing well.
@@ -42,7 +49,8 @@ function dispatch(intentRequest, callback) {
             Warm Regards
             ${StudentName}`
         }));
-    } else if (Student === "yes" && WorkExperience === "no") {
+    } else if (Student === "Yes" && WorkExperience === "No") {
+        console.log('Condition 2');
         callback(close(sessionAttributes, 'Fulfilled', {
             'contentType': 'PlainText',
             'content': `Hello ${Referrer}, Hope you are doing well.
@@ -55,7 +63,8 @@ function dispatch(intentRequest, callback) {
             Warm Regards
             ${StudentName}`
         }));
-    } else if (Student === "no") {
+    } else if (Student === "No") {
+        console.log('Condition 3');
         callback(close(sessionAttributes, 'Fulfilled', {
             'contentType': 'PlainText',
             'content': `Hello ${Referrer}, Hope you are doing well.
