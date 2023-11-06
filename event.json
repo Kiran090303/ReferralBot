@@ -12,16 +12,16 @@
   "currentIntent": {
     "name": "Referral",
     "slots": {
-      "Referrer": "NAME OF PERSON WHO IS GONNA REFER YOU",
+      "Referrer": "Adam Lewis",
       "Student": "Yes",
-      "Degree": "DEGREE",
-      "Branch": "COURSE",
-      "College": "COLLEGE",
-      "JobPosition": "SEEKING ROLE",
-      "Company": "COMPANY NAME",
-      "WorkExperience": "yes",
-      "JobID": "JOB ID",
-      "StudentName": "NAME"
+      "Degree": "B.Tech",
+      "Branch": "Computer Science",
+      "College": "GGITS",
+      "JobPosition": "Software Engineer",
+      "Company": "IBM",
+      "WorkExperience": "Yes",
+      "JobID": "JOB ID:XXXXX",
+      "StudentName": "Kiran Singh Verma"
     },
     "confirmationStatus": "None"
   }
