@@ -20,7 +20,8 @@ Goals to achieve the necessary Output:
 4. Integrate with Whatsapp.
 
 **Step1 — Create a Lambda function**
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 - Sign in to the AWS Management Console and open the AWS Lambda console at https://console.aws.amazon.com/lambda/
 - Choose to Create function.
 - Select Author from scratch.
@@ -30,24 +31,25 @@ Goals to achieve the necessary Output:
 - Enter a new role name EventRole.
 - Choose Create function.
   
-<img width="956" alt="22" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/cdd6831f-e97b-44b5-9693-c9ba72ae2d22">
+<img width="683" alt="one" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/712a601a-38c2-4712-aa45-d36c6032d0e3">
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - Test the Lambda Function Using Sample Event Data.
 - On the function page, in the list of test events, choose Configure test events.
 - Choose Create new test event,In the Event name field, enter a name for the event Test.
 - Choose to Create.
 - Choose Test and Lambda runs your Lambda function.
 
-![24](https://github.com/Kiran090303/ReferralBot/assets/98480971/fc104d0e-49c6-41da-a8dc-8d720a50c4e7)
+<img width="827" alt="two" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/f9cb1fdb-a792-4ae8-bdac-60b06beb2fd0">
 
-**Step 2— Create a bot**
+**Step 2 — Create a bot**
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - Go to services console, type lex and select Amazon Lex.
 - Select Get Started and then select Create.
 - On the Create your Lex bot page, choose Custom bot.
 
-<img width="935" alt="21" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/9b505c08-75d0-4f8e-baa3-063b2fd3f3ac">
+<img width="947" alt="three" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/56ccae20-9975-4824-8f99-dc8a8fcc8347">
 
 - App name: ReferralBot
 - Output voice: Salli
@@ -89,7 +91,7 @@ Now, create the ReferralBot intent , an action that the user wants to perform, w
 -> What do you plan to build with Twilio? Contact center
 -> How do you want to build with Twilio? With code
 
-Click on continue.
+#Click on continue
 
 - Activate your sandbox by accepting terms and conditions.
 - Now you need to send a whatsapp message to the given number with the code mentioned.
