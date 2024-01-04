@@ -1,7 +1,7 @@
 # ReferralBot
 Integrated An Amazon Lex Chatbot With Aws Lambda , Whatsapp Messenger , Creating A Responsive Conversational Interface
 
-![gif](https://github.com/Kiran090303/ReferralBot/assets/98480971/a49a8cbe-f1f5-4cbb-a2a2-ff9eeeb87631)
+![Gif](https://github.com/Kiran090303/ReferralBot/assets/98480971/fd702e8c-b677-4aee-a256-cb06b79cef40)
 
  
 We All Are Tackling From This Question Every Day:-
