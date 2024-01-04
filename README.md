@@ -84,14 +84,13 @@ Now, create the ReferralBot intent , an action that the user wants to perform, w
 **Step 4 — Integrating with WhatsApp**
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--> Create an account on Twilio.
--> Verify your account.
--> After all verifications, you will be asked few questions.
--> Which Twilio product are you here to use? WhatApp
--> What do you plan to build with Twilio? Contact center
--> How do you want to build with Twilio? With code
--> Click on continue
-
+- Create an account on Twilio
+- Verify your account.
+- After all verifications, you will be asked few questions.
+- Which Twilio product are you here to use? WhatApp
+- What do you plan to build with Twilio? Contact center
+- How do you want to build with Twilio? With code
+- Click on continue
 - Activate your sandbox by accepting terms and conditions.
 - Now you need to send a whatsapp message to the given number with the code mentioned.
 - Click on next send a one-way messaging.
