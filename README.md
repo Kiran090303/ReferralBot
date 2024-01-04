@@ -1,7 +1,8 @@
 # ReferralBot
 Integrated An Amazon Lex Chatbot With Aws Lambda , Whatsapp Messenger , Creating A Responsive Conversational Interface
 
-![gif](https://github.com/Kiran090303/ReferralBot/assets/98480971/a589605c-27bf-40ad-92d0-5735c5e7878d)
+![gif](https://github.com/Kiran090303/ReferralBot/assets/98480971/a49a8cbe-f1f5-4cbb-a2a2-ff9eeeb87631)
+
  
 We All Are Tackling From This Question Every Day:-
 
@@ -94,7 +95,7 @@ Click on continue.
 - Now you need to send a whatsapp message to the given number with the code mentioned.
 - Click on next send a one-way messaging.
 - You can send a dummy message to your whatsapp by click on make request.
-- Click on the python code and save the Account Id and auth token. If you couldn’t find it there, open settings and there you go.
+- Click on the Node js code and save the Account Id and auth token. If you couldn’t find it there, open settings and there you go.
 - Click on next.
 - Open AWS Lex, and click on publish, and go to channels. On the left side, you can find Twilio SMS.
 - Give all the details, and Account SID, Auth key with the values which you saved earlier.
